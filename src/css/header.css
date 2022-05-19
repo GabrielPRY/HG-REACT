@@ -1,0 +1,76 @@
+.header {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header p {
+  font-family: var(--teko-font);
+  font-size: 1em;
+}
+
+.header-div {
+  text-align: center;
+}
+
+.header-logo figure {
+  margin: 0;
+}
+
+.header-logo figure img {
+  width: 106px;
+}
+
+.header-icon {
+  font-size: 3em;
+}
+
+.email a,
+.phone a,
+.address a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .header-logo figure img {
+    width: 70px;
+  }
+
+  .header-icon {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-logo figure img {
+    width: 40px;
+  }
+
+  .header-icon {
+    font-size: 1em;
+  }
+
+  .header p {
+    font-size: 0.3em;
+  }
+}
+
+@media screen and (max-width: 394px) and (min-width: 360px) {
+  .header-logo figure img {
+    width: 40px;
+  }
+
+  .header-icon {
+    font-size: 1em;
+  }
+
+  .header p {
+    font-size: 0.3em;
+  }
+}

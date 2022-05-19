@@ -1,0 +1,51 @@
+.jobs {
+  grid-column: 1 / span 3;
+}
+
+.jobs h1 {
+  text-align: center;
+}
+
+.jobs-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 1px 2em;
+}
+
+.job-article-img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+job-article {
+  overflow: hidden;
+}
+
+.job-article-img-container {
+  margin: 0;
+  text-align: center;
+}
+
+.job-article-details {
+  padding: 1em;
+  background-color: var(--gray--color);
+  color: white;
+  margin: 2em;
+  margin-top: -2em;
+  position: relative;
+}
+
+.job-article-details h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .jobs-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .job-article-im-container img {
+    width: 70%;
+  }
+}

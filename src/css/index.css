@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?z13i1j");
+  src: url("../fonts/icomoon.eot?z13i1j#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?z13i1j") format("truetype"),
+    url("../fonts/icomoon.woff?z13i1j") format("woff"),
+    url("../fonts/icomoon.svg?z13i1j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-microsoftoutlook:before {
+  content: "\e900";
+  color: #0072c6;
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+
+:root {
+  --gray--color: #313337;
+  --teko-font: "Teko", sans-serif;
+  --white-s: whitesmoke;
+  --fredoca-font: "Fredoka", sans-serif;
+  --green-color: green;
+  --bg-color: #3a3b3d66;
+}
+
+.App {
+  display: grid;
+  grid-template: 120px 80px 500px 1fr 500px 80px/1fr 1fr 1fr;
+  font-family: var(--fredoca-font);
+}
+
+@media screen and (max-width: 1024px) {
+  /*Nada por el momento*/
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    grid-template: 110px 90px 315px 1fr 500px 80px/1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "img": "imagenes/002.JPG",
+    "titulo": "Tablero",
+    "descripcion": "Descripción va aquí"
+  },
+  {
+    "img": "imagenes/IMG-20220212-WA0009.jpg",
+    "titulo": "Tablero ANDE-GENERADOR",
+    "descripcion": "Descripción va aquí"
+  },
+  {
+    "img": "imagenes/IMG_20220307_163638.jpg",
+    "titulo": "Tablero tipo SENASA",
+    "descripcion": "Descripción va aquí"
+  }
+]

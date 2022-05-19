@@ -1,0 +1,47 @@
+.hero {
+  grid-column: 1 / span 3;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.hero-video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 40%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-overlay img {
+  position: absolute;
+  top: 7em;
+  left: 27em;
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-overlay {
+    height: 86%;
+  }
+
+  .hero-overlay img {
+    top: 8em;
+    left: 19em;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-overlay img {
+    top: 5em;
+    left: 11em;
+    width: 30%;
+  }
+}
