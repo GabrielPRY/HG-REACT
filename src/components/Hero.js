@@ -1,6 +1,6 @@
 import React from "react";
 import video from "../videos/video_preview_h264.mp4";
-import logopng from "../images/logo-removebg-preview.png";
+import logopng from "../images/logo_prev_ui.png";
 import "../css/hero.css";
 
 export default function Hero() {

@@ -19,7 +19,7 @@
 }
 
 .header-logo figure img {
-  width: 106px;
+  width: 200px;
 }
 
 .header-icon {
@@ -31,6 +31,20 @@
 .address a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .header-logo figure img {
+    width: 200px;
+  }
+
+  .header-icon {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 0.6em;
+  }
 }
 
 @media screen and (max-width: 480px) {

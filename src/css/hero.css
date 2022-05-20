@@ -21,27 +21,55 @@
 
 .hero-overlay img {
   position: absolute;
-  top: 7em;
-  left: 27em;
-  width: 20%;
+  top: 5em;
+  left: 35vw;
+  width: 30%;
 }
 
 @media screen and (max-width: 768px) {
   .hero-overlay {
-    height: 86%;
+    height: 436px;
   }
 
   .hero-overlay img {
-    top: 8em;
-    left: 19em;
+    top: 9vh;
+    left: 36vw;
     width: 30%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .hero-overlay img {
-    top: 5em;
-    left: 11em;
+    top: 7vh;
+    left: 35vw;
     width: 30%;
+  }
+
+  .hero-overlay {
+    height: 273px;
+  }
+}
+
+@media screen and (max-width: 394px) and (min-width: 360px) {
+  .hero-overlay img {
+    top: 4vh;
+    left: 35vw;
+    width: 30%;
+  }
+
+  .hero-overlay {
+    height: 204px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-overlay img {
+    top: 4vh;
+    left: 35vw;
+    width: 30%;
+  }
+
+  .hero-overlay {
+    height: 182px;
   }
 }
