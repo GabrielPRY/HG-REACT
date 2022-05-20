@@ -6,7 +6,12 @@ export default function Form() {
     <section id="contacto" className="contac-section">
       <h1>¿Tienes un proyecto?</h1>
       <div className="contac-div">
-        <form action="https://www.google.com/?hl=es" className="contac-form">
+        <form
+          action="mailto:mykuregod@gmail.com"
+          enctype="multipart/form-data"
+          className="contac-form"
+          method="get"
+        >
           <label htmlFor="name">Nombre:</label>
           <br />
           <input
@@ -15,6 +20,7 @@ export default function Form() {
             placeholder="Nombre"
             className="form-data"
             required
+            id="name"
           />
           <br />
           <label htmlFor="email">Email:</label>
@@ -22,6 +28,7 @@ export default function Form() {
           <input
             type="text"
             name="email"
+            id="email"
             placeholder="Email"
             className="form-data"
             required
@@ -32,6 +39,7 @@ export default function Form() {
           <input
             type="text"
             name="phone"
+            id="phone"
             placeholder="Teléfono"
             className="form-data"
             required
@@ -41,7 +49,8 @@ export default function Form() {
           <br />
           <input
             type="text"
-            name="name"
+            name="company"
+            id="company"
             placeholder="Empresa"
             className="form-data"
             required
@@ -52,6 +61,7 @@ export default function Form() {
           <input
             type="text"
             name="project"
+            id="project"
             placeholder="Proyecto"
             className="form-data"
             required
@@ -62,6 +72,7 @@ export default function Form() {
           <input
             type="text"
             name="details"
+            id="details"
             placeholder="Detalles"
             className="form-data"
             required
@@ -73,3 +84,11 @@ export default function Form() {
     </section>
   );
 }
+
+<form action="envio.php" method="GET">
+  <label for="nombre">Nombre</label>
+  <input type="text" id="nombre" name="nombre" />
+  <label for="apellido">Apellido</label>
+  <input type="text" id="apellido" name="apellido" />
+  <button id="envio">Enviar Formulario</button>
+</form>;

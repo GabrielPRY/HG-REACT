@@ -7,10 +7,20 @@
 }
 
 .jobs-grid-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  padding: 1px 2em;
+  padding: 0px 2em; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.job-article {
+  width: 300px;
+  height: auto;
+  margin: 10px;
 }
 
 .job-article-img-container img {
@@ -24,7 +34,6 @@ job-article {
 
 .job-article-img-container {
   margin: 0;
-  text-align: center;
 }
 
 .job-article-details {
@@ -40,9 +49,16 @@ job-article {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .jobs-grid-container {
+    flex-wrap: nowrap;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .jobs-grid-container {
     grid-template-columns: 1fr;
+    flex-wrap: wrap;
   }
 
   .job-article-im-container img {
